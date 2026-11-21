@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"/><meta name="robots" content="noindex"/><title>Portfolio contact form</title></head>
+<body>
+<!-- Static definition of the "Hire me / Get in touch" wizard so Netlify Forms can detect it at deploy time.
+     Field names must match exactly what src/components/ContactWizard.jsx submits. -->
+<form name="portfolio-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="portfolio-contact"/>
+  <input type="text" name="name"/>
+  <input type="email" name="email"/>
+  <input type="text" name="enquiry-type"/>
+  <input type="text" name="area-of-interest"/>
+  <textarea name="message"></textarea>
+  <input type="text" name="bot-field"/>
+</form>
+</body>
+</html>
